@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.home-page {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	row-gap: 45px;
+	column-gap: 20px;
+	padding-left: 95px;
+	padding-top: 78px;
+	margin-bottom: 100px;
+}
+
+.prev-grid {
+	margin-top: 7px;
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	column-gap: 10px;
+}
+.thumbnail {
+	width: 100%;
+}
+
+.chan-logo {
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+}
+
+.vid-title {
+	margin-top: 0px;
+}
+.vid-title {
+	font-family: Arial;
+	line-height: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+.vid-stat {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #6c757d;
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+
+.vid-author {
+	margin-top: 4px;
+	color: #6c757d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.time-pos {
+	position: relative;
+}
+.time {
+	position: absolute;
+	bottom: 7px;
+	right: 4px;
+	background-color: black;
+	color: white;
+	padding: 4px;
+	font-size: 14px;
+	font-weight: 500;
+}
+@media (max-width: 750px) {
+	.home-page {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+	.home-page {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
